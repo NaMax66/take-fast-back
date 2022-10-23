@@ -1,0 +1,11 @@
+{
+  "category": "Example",
+  "list": [
+    {
+      "id": "1",
+      "name": "Example",
+      "price": 0,
+      "packageAmount": 0
+    }
+  ]
+}
