@@ -27,6 +27,6 @@ export function getData(name) {
 export function setData(name, data) {
   if (dataMap[name]) {
     dataMap[name] = data
-    fs.writeFileSync(`./data/${name}.json`, JSON.stringify(getData('price'), null, 2), 'utf-8')
+    fs.writeFileSync(`./data/${name}.json`, JSON.stringify(getData(name), null, 2), 'utf-8')
   }
 }
