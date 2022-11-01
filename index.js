@@ -28,7 +28,7 @@ io.on('connection', (socket) => {
   })
 
   socket.on('newOrderFromClient', (data, cb) => {
-    setData('orders', getData('orders').unshift(data))
+    setData('orders', [data].concat(getData('orders')))
     /* update admin orders */
     socket.broadcast.emit('newOrderFromServer', getData('orders'))
 
